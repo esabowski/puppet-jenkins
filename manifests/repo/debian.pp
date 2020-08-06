@@ -22,8 +22,8 @@ class jenkins::repo::debian
         'src' => false,
       },
       key      => {
-        'id'     => '150FDE3F7787E7D11EF4E12A9B7D32F2D50582E6',
-        'source' => "${pkg_host}/debian/jenkins-ci.org.key",
+        'id'     => '62A9756BFD780C377CF24BA8FCEF32E745F2C3D5',
+        'source' => "${pkg_host}/debian/jenkins.io.key",
       },
       require  => Package['apt-transport-https'],
       notify   => Exec['apt_update'],
@@ -38,8 +38,8 @@ class jenkins::repo::debian
         'src' => false,
       },
       key      => {
-        'id'     => '150FDE3F7787E7D11EF4E12A9B7D32F2D50582E6',
-        'source' => "${pkg_host}/debian/jenkins-ci.org.key",
+        'id'     => '62A9756BFD780C377CF24BA8FCEF32E745F2C3D5',
+        'source' => "${pkg_host}/debian/jenkins.io.key",
       },
       require  => Package['apt-transport-https'],
       notify   => Exec['apt_update'],
